@@ -14,7 +14,7 @@ Licence URI: https://www.os-templates.com/template-terms
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-<link href="layout/styles/popup.css" rel="stylesheet" type="text/css" media="all">
+
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -30,7 +30,7 @@ Licence URI: https://www.os-templates.com/template-terms
   <header id="header" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <div id="logo" class="one_half first">
-      <h1><a href="index.html"><img src="images/logo.jpg" style="height: 112px; float: left;"/></a></h1>
+      <h1><a href="index.html"><img src="images/path4744.png" style="height: 112px; float: left;"/></a></h1>
     </div>
 
     <div class="one_quarter"><strong><i class="far fa-clock rgtspace-5"></i> Vlek v provozu :</strong> 09.00 - 16.30
@@ -49,7 +49,6 @@ Licence URI: https://www.os-templates.com/template-terms
   <nav id="mainav" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <ul class="clear">
-      <li class="active"><a href="index.html">Hlavní stránka</a></li>
       <li><a class="drop" href="#">Ceník</a>
         <ul>
           <li><a href="#velkyvlek-cenik">Velký vlek</a></li>
@@ -108,7 +107,13 @@ Licence URI: https://www.os-templates.com/template-terms
           <article><a href="#"><i class="fas fa-book"></i></a>
             <h6 class="heading">Lyžařská škola</h6>
             <p>Dokážeme naučit lyžovat malé i velké. Díky příjemně pomalému vleku Malý Lucifer a mírnému svahu,
-              se můžete v klidu naučit lyžovat.
+              se můžete v klidu naučit lyžovat.</p>
+            <p id="pujcovna-kontakt" style="display: none;">
+              Na svahu Lucifer funguje soukromá lyžařská škola Arabela.
+              Lyžařské lekce si můžete rezervovat přímo u paní Heleny Štrofové:<br><br>
+              tel: +420 603 487 060<br>
+              e-mail: helena.strofova@seznam.cz
+            </p>
               <footer><a id="show-button" class="btn" href="#">Kontakt</a></footer>
           </article>
         </li>
@@ -180,7 +185,7 @@ Licence URI: https://www.os-templates.com/template-terms
       <div class="sectiontitle">
         <h6 class="heading">Ceník</h6>
       </div>
-
+      <h6>Velký Lucifer</h6>
       <table id="velkyvlek-cenik" border="1" cellspacing="0" cellpadding="0" class="btmspace-80">
         <thead>
         <tr>
@@ -299,7 +304,7 @@ Licence URI: https://www.os-templates.com/template-terms
       </tr></tbody></table>
 
       <hr class="btmspace-80">
-
+      <h6>Malý Lucifer</h6>
       <table id="malyvlek-cenik" border="1" cellspacing="0" cellpadding="0"  class="btmspace-80"><tbody>
       <thead>
       <tr><th>
@@ -352,7 +357,7 @@ Licence URI: https://www.os-templates.com/template-terms
       </tr></tbody></table>
 
       <hr class="btmspace-80">
-
+       <h6>Peklo</h6>
       <table id="peklo-cenik" border="1" cellspacing="0" cellpadding="0"  class="btmspace-80"><tbody>
       <thead>
       <tr><th>
@@ -405,7 +410,7 @@ Licence URI: https://www.os-templates.com/template-terms
       </tr></tbody></table>
 
       <hr class="btmspace-80">
-
+      <h6>Bodovky</h6>
       <table border="1" cellspacing="0" cellpadding="0"  class="btmspace-80"><tbody>
       <thead>
       <tr><th>
@@ -599,9 +604,15 @@ Licence URI: https://www.os-templates.com/template-terms
 <script src="layout/scripts/jquery.min.js"></script>
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
-<script src="layout/scripts/popup.js"></script>
 <script>
-  $("#show-button").popup();
+  $(document).ready(function () {
+      $("#show-button").on("click", function (event) {
+          event.preventDefault();
+          $("#pujcovna-kontakt").show();
+          $("#show-button").hide();
+      });
+  })
+
 </script>
 </body>
 </html>
