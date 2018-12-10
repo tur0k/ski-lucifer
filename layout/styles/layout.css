@@ -542,7 +542,7 @@ table a, #comments a{background-color:inherit;}
 
 	#header{}
 
-	#mainav{padding:15px;}
+	#mainav{padding:15px; color: #000000;}
 	#mainav ul{display:none;}
 	#mainav form{display:block;}
 

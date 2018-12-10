@@ -1,29 +1,28 @@
-body {font-family: "Open Sans", sans-serif}
-h1,h2,h3 {font-family: 'Lalezar', cursive}
-nav a {font-family: 'Lalezar', cursive; color: white; font-size: 130%}
-img {
+.logo {
+    height: 75px;
+    float: left;
+}
+
+.hero-container {
+    background-color: #373737;
     height: 400px;
 }
 
-.room {
-    font-size: 14px;
-    padding: 3px;
-    margin-left: 10px;
-    border: 1px solid black;
-    background: white;
+.hero-logo {
+    height: 400px;
+}
+.hero-text {
+    color: white;
+    margin:20px 0 20px 0;
+    font-size:1.7rem;
+    letter-spacing:3px;
+    line-height: 1.2;
+    padding-left: 20px;
 }
 
-.name {
-    color: #255625;
+.hero-cta {
+    margin:20px 40px 20px 0;
+    font-size:1.7rem;
+    background-color: #AA0000;
+    padding: 20px;
 }
-
-h2 {
-    color: #9c6;
-}
-
-.small-title {font-size: 14px}
-
-p.desc-text {
-    font-size: 18px;
-}
-
