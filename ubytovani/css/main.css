@@ -17,8 +17,14 @@
     font-size:1.7rem;
     letter-spacing:3px;
     line-height: 1.2;
-    padding-left: 80px;
+    padding-left: 60px;
 }
+
+.hero-text li{
+   padding: 10px 0;
+    list-style: none;
+}
+
 .hero-image {
     z-index: 1;
     height: 400px;
