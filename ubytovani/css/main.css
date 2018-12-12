@@ -17,12 +17,25 @@
     font-size:1.7rem;
     letter-spacing:3px;
     line-height: 1.2;
-    padding-left: 20px;
+    padding-left: 80px;
 }
-
+.hero-image {
+    z-index: 1;
+    height: 400px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+.overlay::after {
+    background-color: rgba(55,55,55,.35);
+}
 .hero-cta {
-    margin:20px 40px 20px 0;
+    margin:20px 20px 20px 0;
     font-size:1.7rem;
     background-color: #AA0000;
-    padding: 20px;
+    padding: 20px 0px 20px 20px;
+}
+
+#video_1 {
+    margin: 0 auto;
 }

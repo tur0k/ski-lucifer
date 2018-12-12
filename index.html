@@ -15,10 +15,10 @@
 <title>Ski Lucifer - Lyžování Jizerské hory</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta http-equiv="last-modified" content="Sun, 9 Dec 2018 09:00:46 GMT" />
+  <meta http-equiv="last-modified" content="Wed, 12 Dec 2018 09:00:46 GMT" />
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
   <link href="ubytovani/css/main.css" rel="stylesheet" type="text/css" media="all">
-
+  <link type="text/css" href="https://www.webcamlive.cz/stream/videojs5/video-js.min.css" rel="stylesheet" property="stylesheet">
 </head>
 <body id="top">
 
@@ -55,8 +55,11 @@
 </div>
 
 <div class="hoc clear hero-container">
-  <div class="one_half first hero-image">
-    <img src="images/rodinne.jpg" />
+  <div class="one_half first hero-image overlay" style="background-image: url('images/rodinne.jpg');">
+<!--
+    <div style="height: 400px; width: 150px; background-image: linear-gradient(to left, rgba(55,55,55,0) , #373737); float: left"></div>
+-->
+    <div style="height: 400px; width: 25px; background-image: linear-gradient(to right, rgba(55,55,55,0) , #373737); float: right;"></div>
   </div>
   <div class="one_half hero-text ">
     <p>Ideální pro rodiny s dětmi
@@ -570,8 +573,19 @@
       <div class="sectiontitle">
         <h6 class="heading">Webkamera</h6>
       </div>
-      <div class="wrapper" style="text-align: center">
-          <img src="https://www.infocesko.cz/content/inphoto.aspx?mistoid=1112&pt=4&lid=1&clid=1" />
+      <div class="wrapper">
+        <link type="text/css" href="https://www.webcamlive.cz/stream/videojs5/video-js.min.css" rel="stylesheet" property='stylesheet' />
+        <video id="video_1"
+               class="video-js vjs-default-skin"
+               controls="controls"
+               preload="auto"
+               width="630"
+               height="525"
+               poster="https://webcamlive.cz/camera_image.php?idCamera=274"
+               data-setup='{"controls":true}'>
+          <source src="https://58fb4d0e87234.streamlock.net/rtplive/_definst_/cam274.stream/playlist.m3u8" type="application/x-mpegURL"/>
+        </video>
+        <script src="https://www.webcamlive.cz/stream/videojs5/video.min.js" ></script>
       </div>
     </section>
 
