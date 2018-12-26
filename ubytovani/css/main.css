@@ -45,3 +45,9 @@
 #video_1 {
     margin: 0 auto;
 }
+
+.highligted-cell {
+background-color: green;
+color: white;
+font-weight: bold;
+}
