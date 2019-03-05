@@ -186,7 +186,7 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 /* Content */
 .container .content{}
 
-.sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center;}
+.sectiontitle{display:block; max-width:55%; margin:0 auto 50px; text-align:center;}
 .sectiontitle *{margin:0;}
 
 #introblocks{margin-bottom:80px;}
