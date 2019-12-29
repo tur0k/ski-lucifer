@@ -46,8 +46,14 @@
     margin: 0 auto;
 }
 
-.highligted-cell {
+.red-cell {
 background-color: red;
+color: white;
+font-weight: bold;
+}
+
+.green-cell {
+background-color: green;
 color: white;
 font-weight: bold;
 }
